@@ -149,12 +149,17 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="https://cdn.shortpixel.ai/client/q_lossy,ret_img/https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Prodotti</a></li>
-            <li><a href="#">News</a></li>
-        </ul>
+        <div class="header-img">
+            <img class="logo" src="https://cdn.shortpixel.ai/client/q_lossy,ret_img/https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="">
+        </div>
+        <div >
+            <ul class="header-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Prodotti</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </div>
+        
     </header>
 
     <main>
@@ -188,6 +193,19 @@
             @endforeach
         </ul>
     </main>
+    <footer>
+        <div class="footer-left">
+        <img class="logo" src="https://cdn.shortpixel.ai/client/q_lossy,ret_img/https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="">
+
+        </div>
+        <div class="footer-center">
+
+        </div>
+        <div class="footer-right">
+
+        </div>
+
+    </footer>
     
 
     

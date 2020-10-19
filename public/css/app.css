@@ -1,16 +1,38 @@
-* {
+@import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
 header {
   width: 90%;
   margin: auto;
-  background-color: aqua;
+}
+
+.header-img {
+  display: flex;
+  justify-content: center;
 }
 
 .logo {
   margin: auto;
+}
+
+.header-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.header-list li {
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.header-list li a {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
 }
 
