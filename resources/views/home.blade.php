@@ -131,10 +131,10 @@
     foreach ($data as $product) {
         if($product["tipo"] == "lunga"){
             $lunga[] = $product;
-        }elseif ($product["tipo"] == "cortissima"){
-            $cortissima[] = $product;
-        }elseif ($product["tipo" ]== "corta"){
+        }elseif ($product["tipo"] == "corta"){
             $corta[] = $product;
+        }elseif ($product["tipo" ]== "cortissima"){
+            $cortissima[] = $product;
         }
     }
 @endphp
@@ -150,9 +150,15 @@
 <body>
     <header>
         <img class="logo" src="https://cdn.shortpixel.ai/client/q_lossy,ret_img/https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Prodotti</a></li>
+            <li><a href="#">News</a></li>
+        </ul>
     </header>
 
     <main>
+        <h3>LE LUNGHE</h3>
         <ul>
             @foreach ($lunga as $product)
             <li>
@@ -161,18 +167,20 @@
             </li>
             @endforeach
         </ul>
-    
+
+        <h3>LE CORTE</h3>
         <ul>
-            @foreach ($lunga as $product)
+            @foreach ($corta as $product)
             <li>
             <img src="{{$product["src"]}}" alt="">
             <h3>{{$product["titolo"]}}</h3>
             </li>
             @endforeach
         </ul>
-    
+
+        <h3>LE CORTISSIME</h3>
         <ul>
-            @foreach ($lunga as $product)
+            @foreach ($cortissima as $product)
             <li>
             <img src="{{$product["src"]}}" alt="">
             <h3>{{$product["titolo"]}}</h3>
