@@ -17,6 +17,7 @@ header {
 
 .logo {
   margin: auto;
+  margin-top: 50px;
 }
 
 .header-list {
@@ -27,12 +28,36 @@ header {
 
 .header-list li {
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .header-list li a {
   text-decoration: none;
   font-size: 30px;
+  font-weight: bold;
   color: black;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+h3 {
+  color: darkblue;
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.img-pasta {
+  width: 550px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+.list-pasta {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
 

@@ -164,31 +164,33 @@
 
     <main>
         <h3>LE LUNGHE</h3>
-        <ul>
+        <ul class="list-pasta">
             @foreach ($lunga as $product)
             <li>
-            <img src="{{$product["src"]}}" alt="">
-            <h3>{{$product["titolo"]}}</h3>
+            <img class ="img-pasta" src="{{$product["src"]}}" alt="">
+             {{-- <h5>{{$product["titolo"]}}</h5> --}}
             </li>
             @endforeach
         </ul>
 
         <h3>LE CORTE</h3>
-        <ul>
+        <ul class="list-pasta">
             @foreach ($corta as $product)
             <li>
-            <img src="{{$product["src"]}}" alt="">
-            <h3>{{$product["titolo"]}}</h3>
+            <img class ="img-pasta" src="{{$product["src"]}}" alt="">
+            {{-- <h5>{{$product["titolo"]}}</h5> --}}
+
             </li>
             @endforeach
         </ul>
 
         <h3>LE CORTISSIME</h3>
-        <ul>
+        <ul class="list-pasta">
             @foreach ($cortissima as $product)
             <li>
-            <img src="{{$product["src"]}}" alt="">
-            <h3>{{$product["titolo"]}}</h3>
+            <img class ="img-pasta" src="{{$product["src"]}}" alt="">
+            {{-- <h5>{{$product["titolo"]}}</h5> --}}
+
             </li>
             @endforeach
         </ul>
