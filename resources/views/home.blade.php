@@ -144,40 +144,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="{{asset('css/app.css')}}">
-    <title>Contatti</title>
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <title>HOME</title>
 </head>
 <body>
     <header>
-        <img src="https://cdn.shortpixel.ai/client/q_lossy,ret_img/https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="">
+        <img class="logo" src="https://cdn.shortpixel.ai/client/q_lossy,ret_img/https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="">
     </header>
 
-    <ul>
-        @foreach ($lunga as $product)
-        <li>
-        <img src="{{$product["src"]}}" alt="">
-        <h3>{{$product["titolo"]}}</h3>
-        </li>
-        @endforeach
-    </ul>
-
-    <ul>
-        @foreach ($lunga as $product)
-        <li>
-        <img src="{{$product["src"]}}" alt="">
-        <h3>{{$product["titolo"]}}</h3>
-        </li>
-        @endforeach
-    </ul>
-
-    <ul>
-        @foreach ($lunga as $product)
-        <li>
-        <img src="{{$product["src"]}}" alt="">
-        <h3>{{$product["titolo"]}}</h3>
-        </li>
-        @endforeach
-    </ul>
+    <main>
+        <ul>
+            @foreach ($lunga as $product)
+            <li>
+            <img src="{{$product["src"]}}" alt="">
+            <h3>{{$product["titolo"]}}</h3>
+            </li>
+            @endforeach
+        </ul>
+    
+        <ul>
+            @foreach ($lunga as $product)
+            <li>
+            <img src="{{$product["src"]}}" alt="">
+            <h3>{{$product["titolo"]}}</h3>
+            </li>
+            @endforeach
+        </ul>
+    
+        <ul>
+            @foreach ($lunga as $product)
+            <li>
+            <img src="{{$product["src"]}}" alt="">
+            <h3>{{$product["titolo"]}}</h3>
+            </li>
+            @endforeach
+        </ul>
+    </main>
+    
 
     
 </body>
