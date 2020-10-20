@@ -10,17 +10,15 @@ header {
   margin: auto;
 }
 
-.header-img {
-  display: flex;
-  justify-content: center;
+header .header-img {
+  text-align: center;
 }
 
-.logo {
-  margin: auto;
+header .header-img .logo {
   margin-top: 50px;
 }
 
-.header-list {
+header .header-list {
   display: flex;
   justify-content: center;
   list-style: none;
@@ -44,7 +42,7 @@ main {
 }
 
 h3 {
-  color: darkblue;
+  color: #002d75;
   font-size: 40px;
   margin-top: 50px;
 }

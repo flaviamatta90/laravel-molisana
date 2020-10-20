@@ -1,25 +1,35 @@
 header{
   width: 90%;
   margin: auto;
+
+  .header-img{
+    text-align: center;
+
+    .logo{
+      margin-top: 50px;
+    }
+
+  }
+  .header-list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    
+  }
+
+
+
+
 }
 
-.header-img{
-  display: flex;
-  justify-content: center;
-}
 
 
-.logo{
-    margin: auto;
-    margin-top: 50px;
-}
 
 
-.header-list{
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
+
+
+
 
 .header-list li{
   padding: 10px;
@@ -31,4 +41,8 @@ header{
   font-size: 30px;
   font-weight: bold;
   color: black;
+
+   .active{
+    background-color: $lightblue;
+  }
 }
