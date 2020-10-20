@@ -57,21 +57,33 @@ main .main-container h3 {
   margin-top: 20px;
 }
 
-main .main-container .img-pasta {
+main .main-container .list-pasta {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+main .main-container .list-pasta .img-pasta {
+  display: block;
   width: 558px;
   padding-right: 35px;
   padding-top: 30px;
 }
 
-main .main-container .img-pasta:hover {
+main .main-container .list-pasta .img-pasta:hover {
   transition: transform 0.3s;
   transform: scale(1.1);
 }
 
-main .main-container .list-pasta {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
+main .main-container .list-pasta .img-pasta:hover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  background-color: #002d75;
+  opacity: 0.5;
 }
 
 footer {

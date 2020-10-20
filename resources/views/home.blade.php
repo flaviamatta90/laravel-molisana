@@ -31,8 +31,10 @@ La Molisana -Sito Ufficiale
 <ul class="list-pasta">
     @foreach ($lunga as $key => $product)
     <li>
-        <img class ="img-pasta" src="{{$product["src"]}}" alt="">
-        <a href="prodotti/show/{{$key}}"><h5>{{$product["titolo"]}}</h5></a>
+        <img class ="img-pasta" src="{{$product["src"]}}" alt="pasta">
+        <div class="overlay">
+            <a href="prodotti/show/{{$key}}"><h5>{{$product["titolo"]}}</h5></a>
+        </div>
     </li>
     @endforeach
 </ul>
@@ -41,8 +43,10 @@ La Molisana -Sito Ufficiale
 <ul class="list-pasta">
     @foreach ($corta as $key => $product)
     <li>
-        <img class ="img-pasta" src="{{$product["src"]}}" alt="">
-        <a href="prodotti/show/{{$key}}"><h5>{{$product["titolo"]}}</h5></a>
+        <img class ="img-pasta" src="{{$product["src"]}}" alt="pasta">
+        <div class="overlay">
+            <a href="prodotti/show/{{$key}}"><h5>{{$product["titolo"]}}</h5></a>
+        </div>
     </li>
     @endforeach
 </ul>
@@ -51,8 +55,10 @@ La Molisana -Sito Ufficiale
 <ul class="list-pasta">
     @foreach ($cortissima as $key => $product)
     <li>
-        <img class ="img-pasta" src="{{$product["src"]}}" alt="">
-        <a href="prodotti/show/{{$key}}"><h5>{{$product["titolo"]}}</h5></a>
+        <img class ="img-pasta" src="{{$product["src"]}}" alt="pasta">
+        <div class="overlay">
+            <a href="prodotti/show/{{$key}}"><h5>{{$product["titolo"]}}</h5></a>
+        </div>
     </li>
     @endforeach
 </ul>

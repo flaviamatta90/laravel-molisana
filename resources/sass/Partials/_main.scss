@@ -9,26 +9,37 @@ main{
       font-size: 40px;
       margin-top: 20px;
     }
-    .img-pasta{
-      width: 558px;
-      padding-right: 35px;
-      padding-top: 30px;
 
-      &:hover {
-        transition: transform .3s;
-        -ms-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-      }
-      
-   }
-
-
-  .list-pasta{
+    .list-pasta{
+      position: relative;
       display: flex;
       flex-wrap: wrap;
       list-style: none;
-    }
+
+      .img-pasta{
+        display: block;
+        width: 558px;
+        padding-right: 35px;
+        padding-top: 30px;
+  
+        &:hover{
+          transition: transform .3s;
+          -ms-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  
+          .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 80%;
+            background-color: $titleColor;
+            opacity: 0.5;
+          }
+        }
+     } 
+   }
   }
 }
 
