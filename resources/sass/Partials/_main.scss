@@ -11,9 +11,18 @@ main{
     }
     .img-pasta{
       width: 558px;
-      padding-right: 30px;
+      padding-right: 35px;
       padding-top: 30px;
-  }
+
+      &:hover {
+        transition: transform .3s;
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      
+   }
+
 
   .list-pasta{
       display: flex;

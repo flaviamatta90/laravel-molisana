@@ -59,8 +59,13 @@ main .main-container h3 {
 
 main .main-container .img-pasta {
   width: 558px;
-  padding-right: 30px;
+  padding-right: 35px;
   padding-top: 30px;
+}
+
+main .main-container .img-pasta:hover {
+  transition: transform 0.3s;
+  transform: scale(1.1);
 }
 
 main .main-container .list-pasta {
