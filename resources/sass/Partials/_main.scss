@@ -1,23 +1,28 @@
 main{
-  width: 90%;
-  margin: auto;
-}
+  background-image: url('/images/fondo-pag-speciali.jpg');
 
-h3{
-    color: #002d75;
-    font-size: 40px;
-    margin-top: 50px;
-}
+  .main-container{
+    @include container;
 
-
-.img-pasta{
-    width: 550px;
-    padding-right: 30px;
-    padding-top: 30px;
-}
-
-.list-pasta{
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+    h3{
+      color: $titleColor;
+      font-size: 40px;
+      margin-top: 20px;
+    }
+    .img-pasta{
+      width: 558px;
+      padding-right: 30px;
+      padding-top: 30px;
   }
+
+  .list-pasta{
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+  }
+}
+
+
+
+

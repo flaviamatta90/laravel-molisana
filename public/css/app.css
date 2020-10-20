@@ -39,26 +39,31 @@ header .header-list li a {
 header .header-list li a.active {
   background-color: #b3e5fc;
   padding: 10px;
+  padding-bottom: 30px;
 }
 
 main {
+  background-image: url("/images/fondo-pag-speciali.jpg");
+}
+
+main .main-container {
   width: 90%;
   margin: auto;
 }
 
-h3 {
+main .main-container h3 {
   color: #002d75;
   font-size: 40px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
-.img-pasta {
-  width: 550px;
+main .main-container .img-pasta {
+  width: 558px;
   padding-right: 30px;
   padding-top: 30px;
 }
 
-.list-pasta {
+main .main-container .list-pasta {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
