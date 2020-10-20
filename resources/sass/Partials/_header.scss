@@ -1,48 +1,43 @@
 header{
-  width: 90%;
-  margin: auto;
+  @include container;
 
   .header-img{
     text-align: center;
 
     .logo{
-      margin-top: 50px;
+      @include marginTop;
     }
-
   }
+
   .header-list{
     display: flex;
     justify-content: center;
     list-style: none;
 
+    & li{
+      padding: 10px;
+      @include marginTop;
     
-  }
+      & a{
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
 
-
-
-
-}
-
-
-
-
-
-
-
-
-
-.header-list li{
-  padding: 10px;
-  margin-top: 50px;
-}
-
-.header-list li a{
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: bold;
-  color: black;
-
-   .active{
-    background-color: $lightblue;
+        &.active{
+          background-color: $activeColor;
+          padding: 10px;
+        }
+      }
+    }
   }
 }
+
+
+
+
+
+
+
+
+

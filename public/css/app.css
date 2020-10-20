@@ -24,16 +24,21 @@ header .header-list {
   list-style: none;
 }
 
-.header-list li {
+header .header-list li {
   padding: 10px;
   margin-top: 50px;
 }
 
-.header-list li a {
+header .header-list li a {
   text-decoration: none;
   font-size: 30px;
   font-weight: bold;
   color: black;
+}
+
+header .header-list li a.active {
+  background-color: #b3e5fc;
+  padding: 10px;
 }
 
 main {
