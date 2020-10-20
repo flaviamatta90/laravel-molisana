@@ -18,5 +18,5 @@
     NEWS
 @endsection
 @section('mainContent')
-    <h1>News in aggiornamento</h1>
+    <h3>News in aggiornamento</h3>
 @endsection

@@ -19,5 +19,5 @@
     Prodotti
 @endsection
 @section('mainContent')
-    <h1>Prodotti in aggiornamento</h1>
+    <h3>Prodotti in aggiornamento</h3>
 @endsection

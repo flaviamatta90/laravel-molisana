@@ -1,0 +1,27 @@
+footer{
+    background-image: url('/images/footer-montagne-bottom.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    .footer-container{
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        
+    .footer-left{
+        .logo{
+            @include marginTop;
+        }
+    }
+
+    .footer-center{
+
+    }
+
+    .footer-right{
+
+        
+    }
+    }
+    
+}

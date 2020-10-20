@@ -69,3 +69,20 @@ main .main-container .list-pasta {
   list-style: none;
 }
 
+footer {
+  background-image: url("/images/footer-montagne-bottom.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+footer .footer-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-container .footer-left .logo {
+  margin-top: 50px;
+}
+
