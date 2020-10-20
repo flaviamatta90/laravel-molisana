@@ -7,21 +7,22 @@ footer{
         @include container;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         
-    .footer-left{
-        .logo{
-            @include marginTop;
+        .footer-list{
+            .logo{
+                @include marginTop;
+            }
+
+            h2{
+                color: $footerTextColor;
+                padding-top: 50px;
+            }
+            ul{
+                @include ulnodec;
+                color: $footerTextColor;
+                line-height: 30px;
+            }
         }
     }
-
-    .footer-center{
-
-    }
-
-    .footer-right{
-
-        
-    }
-    }
-    
 }

@@ -80,9 +80,21 @@ footer .footer-container {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-footer .footer-container .footer-left .logo {
+footer .footer-container .footer-list .logo {
   margin-top: 50px;
+}
+
+footer .footer-container .footer-list h2 {
+  color: #808080;
+  padding-top: 50px;
+}
+
+footer .footer-container .footer-list ul {
+  list-style: none;
+  color: #808080;
+  line-height: 30px;
 }
 

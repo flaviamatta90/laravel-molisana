@@ -12,7 +12,7 @@ header{
   .header-list{
     display: flex;
     justify-content: center;
-    list-style: none;
+    @include ulnodec;
 
     & li{
       padding: 10px;
