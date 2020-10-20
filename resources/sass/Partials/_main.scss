@@ -36,6 +36,13 @@ main{
             height: 80%;
             background-color: $titleColor;
             opacity: 0.5;
+
+             & a{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+            }
           }
         }
      } 
