@@ -9,12 +9,8 @@
 </head>
 <body>
     @include('partials.header')
-    <main>
-        <div class="main-container">
-            @yield('mainContent')
-        </div>
-       
-    </main>
+    @yield('mainContent')
+    
     @include('partials.footer')
     
 </body>

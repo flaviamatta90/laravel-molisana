@@ -11,14 +11,14 @@ main{
     }
 
     .list-pasta{
-      position: relative;
       display: flex;
+      flex-direction: row;
+      display: inline-block;
       flex-wrap: wrap;
       list-style: none;
 
       .img-pasta{
-        display: block;
-        width: 558px;
+        width: 550px;
         padding-right: 35px;
         padding-top: 30px;
 
@@ -30,21 +30,21 @@ main{
           transform: scale(1.1);
         }
 
-        .overlay{
+        /* .overlay{
           position: absolute;
           top: 0;
           left: 0;
           width: 80%;
           height: 80%;
-          background-color: $titleColor;
+          background-color: $titleColor; */
         
-          & a{
+          /* & a{
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%,-50%);
           }
-        }
+        } */
       }
     } 
   }

@@ -1,8 +1,12 @@
 @extends('layouts.main')
 
 @section('mainContent')
-    <h1>{{$data["titolo"]}}</h1>
-    <img src="{{$data["src-h"]}}" alt="pasta">
-    <img src="{{$data["src-p"]}}" alt="pasta">
-    <p>{!!$data["descrizione"]!!}</p>    
+
+    <div class="monocromo">
+        <h2>{{$data["titolo"]}}</h2>
+        <img class= "singoli-prodotti" src="{{$data["src-h"]}}" alt="pasta">
+        <img class = "singoli-prodotti" src="{{$data["src-p"]}}" alt="pasta">
+        <p>{!!$data["descrizione"]!!}</p>    
+    </div>
+    
 @endsection

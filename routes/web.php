@@ -61,7 +61,7 @@ Route::get('/prodotti', function () {
 
 
 Route::get('/prodotti/show/{id}', function ($id) {
-    $product = config("pasta.$id");
+    $product = config("dbpasta.$id");
 
     return view('prodotto-singolo', ["data" => $product]);
 })->where('id', '[0-9]+')->name("dettaglio-prodotto");
