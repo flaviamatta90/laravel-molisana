@@ -1,23 +1,24 @@
-{{-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    <title>PRODOTTI</title>
-</head>
-<body>
-    @include('partials.header')
-
-    <h1>Prodotti in aggiornamento</h1>
-</body>
-</html> --}}
-
 @extends('layouts.main')
 @section('title')
     Prodotti
 @endsection
 @section('mainContent')
-    <h3>Prodotti in aggiornamento</h3>
+
+    @if (!empty($paste))
+        @foreach ($paste as $key => $tipopasta)
+            <h3>{{$key}}</h3>
+            @foreach ($tipopasta as $product)
+                <ul>
+                    <li>
+                        <img class ="img-pasta" src="{{$product["src"]}}" alt="pasta">
+                        <div class="overlay">
+                            <a href="{{route('dettaglio-prodotto', $product['id'])}}" {{$product["id"]}}><h5>{{$product["titolo"]}}</h5></a>
+                        </div>
+                    </li>
+                </ul>
+            @endforeach
+            
+        @endforeach         
+    @endif
+
 @endsection

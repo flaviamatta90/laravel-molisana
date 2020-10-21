@@ -72,21 +72,21 @@ main .main-container .list-pasta .img-pasta {
 }
 
 main .main-container .list-pasta .img-pasta:hover {
+  display: block;
   transition: transform 0.3s;
   transform: scale(1.1);
 }
 
-main .main-container .list-pasta .img-pasta:hover .overlay {
+main .main-container .list-pasta .img-pasta .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 80%;
   height: 80%;
   background-color: #002d75;
-  opacity: 0.5;
 }
 
-main .main-container .list-pasta .img-pasta:hover .overlay a {
+main .main-container .list-pasta .img-pasta .overlay a {
   position: absolute;
   top: 50%;
   left: 50%;

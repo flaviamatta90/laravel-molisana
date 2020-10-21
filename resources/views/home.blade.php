@@ -23,43 +23,27 @@ $data = config('dbpasta');
 La Molisana -Sito Ufficiale    
 @endsection
 
+@extends('layouts.main')
+@section('title')
+    Prodotti
+@endsection
 @section('mainContent')
-@if (!empty($lunga))
+
+    @if (!empty($paste))
+        @foreach ($paste as $key => $tipopasta)
+            <h3>{{$key}}</h3>
+            @foreach ($tipopasta as $product)
+                <ul>
+                    <li>
+                        <img class ="img-pasta" src="{{$product["src"]}}" alt="pasta">
+                        <div class="overlay">
+                            <a href="{{route('dettaglio-prodotto', $product['id'])}}" {{$product["id"]}}><h5>{{$product["titolo"]}}</h5></a>
+                        </div>
+                    </li>
+                </ul>
+            @endforeach
             
-@endif
-<h3>LE LUNGHE</h3>
-<ul class="list-pasta">
-    @foreach ($lunga as $key => $product)
-    <li>
-        <img class ="img-pasta" src="{{$product["src"]}}" alt="pasta">
-        <div class="overlay">
-            <a href="prodotti/show/{{$key}}"><h5>{{$product["titolo"]}}</h5></a>
-        </div>
-    </li>
-    @endforeach
-</ul>
+        @endforeach         
+    @endif
 
-<h3>LE CORTE</h3>
-<ul class="list-pasta">
-    @foreach ($corta as $key => $product)
-    <li>
-        <img class ="img-pasta" src="{{$product["src"]}}" alt="pasta">
-        <div class="overlay">
-            <a href="prodotti/show/{{$key}}"><h5>{{$product["titolo"]}}</h5></a>
-        </div>
-    </li>
-    @endforeach
-</ul>
-
-<h3>LE CORTISSIME</h3>
-<ul class="list-pasta">
-    @foreach ($cortissima as $key => $product)
-    <li>
-        <img class ="img-pasta" src="{{$product["src"]}}" alt="pasta">
-        <div class="overlay">
-            <a href="prodotti/show/{{$key}}"><h5>{{$product["titolo"]}}</h5></a>
-        </div>
-    </li>
-    @endforeach
-</ul>
 @endsection
