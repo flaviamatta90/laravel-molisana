@@ -1,21 +1,3 @@
-@php
-
-$data = config('dbpasta');
-
-    $lunga = [];
-    $corta = [];
-    $cortissima = [];
-
-    foreach ($data as $key => $product) {
-        if($product["tipo"] == "lunga"){
-            $lunga[$key] = $product;
-        }elseif ($product["tipo"] == "corta"){
-            $corta[$key] = $product;
-        }elseif ($product["tipo" ]== "cortissima"){
-            $cortissima[$key] = $product;
-        }
-    }
-@endphp
 
 @extends('layouts.main')
 
@@ -23,10 +5,6 @@ $data = config('dbpasta');
 La Molisana -Sito Ufficiale    
 @endsection
 
-@extends('layouts.main')
-@section('title')
-    Prodotti
-@endsection
 @section('mainContent')
 
     @if (!empty($paste))
