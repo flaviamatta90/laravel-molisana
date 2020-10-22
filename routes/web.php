@@ -61,17 +61,18 @@ Route::get('/prodotti', function () {
 
 
 Route::get('/prodotti/show/{id}', function ($id) {
-    $products = config("dbpasta.$id");
 
-    if($products[$id] == null){
+    $products = config("dbpasta");
+    
+    if($products[$id] == null) {
         abort(404);
     }
 
-    $product = $products[$id];
+    $product = ($products[$id]);
     
     $length = count($products);
 
-    return view('prodotto-singolo', ["data" => $products, "id" => $id, "lenght" => $length]);
+    return view('prodotto-singolo', ["data" => $product, "id" => $id, "length" => $length]);
 })->where('id', '[0-9]+')->name("dettaglio-prodotto");
 
 
