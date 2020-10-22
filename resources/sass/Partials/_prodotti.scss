@@ -15,6 +15,18 @@
         width: 100%;
     }
 
+    .arrow{
+        display: flex;
+        justify-content: space-between;
+
+        .fas{
+            font-size: 50px;
+            color: $titleColor;
+            background-color: #fff;
+            padding: 15px;
+        }
+    }
+
     p{
         color: $titleColor;
         font-size: 30px;
