@@ -32,7 +32,7 @@ Route::get('/', function () {
    
 Route::get('/prodotti', function () {
 
-/*     $data = config('dbpasta');
+/*  $data = config('dbpasta');
     $lunga = [];
     $corta = [];
     $cortissima = [];
@@ -61,11 +61,18 @@ Route::get('/prodotti', function () {
 
 
 Route::get('/prodotti/show/{id}', function ($id) {
-    $product = config("dbpasta.$id");
+    $products = config("dbpasta.$id");
 
-    return view('prodotto-singolo', ["data" => $product]);
+    if($products[$id] == null){
+        abort(404);
+    }
+
+    $product = $products[$id];
+    
+    $length = count($products);
+
+    return view('prodotto-singolo', ["data" => $products, "id" => $id, "lenght" => $length]);
 })->where('id', '[0-9]+')->name("dettaglio-prodotto");
-
 
 
 

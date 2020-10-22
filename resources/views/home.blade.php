@@ -16,7 +16,10 @@ La Molisana -Sito Ufficiale
                         <li>
                             <img class ="img-pasta" src="{{$product["src"]}}" alt="pasta">
                             <div class="overlay">
-                                <a href="{{route('dettaglio-prodotto', $product['id'])}}" {{$product["id"]}}><h5>{{$product["titolo"]}}</h5></a>
+                                <a href="{{route('dettaglio-prodotto', $product['id'])}}" {{$product["id"]}}>
+                                    <h4>{{$product["titolo"]}}</h4>
+                                    <img class ="icon-svg" src="/images/icon.svg" alt="">
+                                </a>
                             </div>
                         </li>
                     </ul>
